@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3211C7D72719F1AB00D4D710 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3211C7D62719F1AB00D4D710 /* LICENSE */; };
+		3211C7D92719F55700D4D710 /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3211C7D82719F55700D4D710 /* ScrumsView.swift */; };
 		324869E22714FD770053D922 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324869E12714FD770053D922 /* CardView.swift */; };
 		324C7DD92719E87A00D35EBC /* Color+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324C7DD82719E87A00D35EBC /* Color+Codable.swift */; };
 		324C7DDB2719E89100D35EBC /* Models in Resources */ = {isa = PBXBuildFile; fileRef = 324C7DDA2719E89100D35EBC /* Models */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		3211C7D62719F1AB00D4D710 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3211C7D82719F55700D4D710 /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
 		324869E12714FD770053D922 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		324C7DD82719E87A00D35EBC /* Color+Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Codable.swift"; sourceTree = "<group>"; };
 		324C7DDA2719E89100D35EBC /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Models; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				32CB567727146725009C95D9 /* Preview Content */,
 				324869E12714FD770053D922 /* CardView.swift */,
 				324C7DDE2719E8B500D35EBC /* DailyScrum.swift */,
+				3211C7D82719F55700D4D710 /* ScrumsView.swift */,
 				32CB566F27146723009C95D9 /* Products */,
 			);
 			path = Scrumdinger;
@@ -252,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32CB567427146723009C95D9 /* MeetingView.swift in Sources */,
+				3211C7D92719F55700D4D710 /* ScrumsView.swift in Sources */,
 				324869E22714FD770053D922 /* CardView.swift in Sources */,
 				324C7DDF2719E8B500D35EBC /* DailyScrum.swift in Sources */,
 				324C7DD92719E87A00D35EBC /* Color+Codable.swift in Sources */,
