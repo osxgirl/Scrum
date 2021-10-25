@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DetailView: View {
     let scrum: DailyScrum
+    @State private var isPresented = false
     
     var body: some View {
         List {
@@ -32,8 +33,8 @@ struct DetailView: View {
                         .foregroundColor(scrum.color)
                 }
                 .accessibilityElement(children: .ignore)
-                }
-            Section(header: Text("Attendees")){
+            }
+            Section(header: Text("Attendees")) {
                 ForEach(scrum.attendees, id: \.self) { attendee in
                     Label(attendee, systemImage: "person")
                         .accessibilityLabel(Text("Person"))
@@ -43,8 +44,22 @@ struct DetailView: View {
             }
         }
         .listStyle(InsetGroupedListStyle())
+        .navigationBarItems(trailing: Button("Edit") {
+            isPresented = true
+        })
         .navigationTitle(scrum.title)
-    }
+        .fullScreenCover(isPresented: $isPresented) {
+            NavigationView {
+                EditView()
+                    .navigationTitle(scrum.title)
+                    .navigationBarItems(leading: Button("Cancel") {
+                        isPresented = false
+                        }, trailing: Button("Done") {
+                        isPresented = false
+                    })
+            }
+        }
+     }
 }
 
 struct DetailView_Previews: PreviewProvider {
